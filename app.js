@@ -7,12 +7,17 @@ const routes = require('./router');
 const env = process.env.NODE_ENV || 'development';
 const app = express();
 
+app.locals.ENV = env;
+app.locals.ENV_DEVELOPMENT = env == 'development';
+
+//app.use(logger('dev'));
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(__dirname + '/public'));
 
+app.use('/', routes);
 
 if (app.get('env') === 'development') {
   app.use((error, req, res, next) => {
@@ -40,3 +45,5 @@ app.use((error, req, res, next) => {
     error: {}
   });
 });
+
+module.exports = app;
