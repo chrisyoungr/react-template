@@ -1,0 +1,24 @@
+{
+  "name": "react-template",
+  "version": "1.0.0",
+  "description": "This is my react template",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisyoungr/react-template.git"
+  },
+  "keywords": [
+    "react",
+    "template"
+  ],
+  "author": "Chris Young",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisyoungr/react-template/issues"
+  },
+  "homepage": "https://github.com/chrisyoungr/react-template#readme"
+}
