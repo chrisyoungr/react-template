@@ -2,16 +2,16 @@
 var debug = require('debug')('reacttemplate:server');
 var http = require('http');
 var app = require('./app');
-/**
- * Create HTTP server.
- */
-var server = http.createServer(app);
 
 /**
  * Get port from environment and store in Express.
  */
 var port = normalizePort(process.env.PORT || '3013');
-console.log("Port is", port);
+/**
+ * Create HTTP server.
+ */
+var server = http.createServer(app);
+
 /*
  * Normalize a port into a number, string, or false.
  */
