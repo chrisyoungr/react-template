@@ -52,4 +52,15 @@ function onError(error) {
       throw error;
   }
 }
-console.log("Works");
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
+  console.log('Listening on ' + bind);
+  debug('Listening on ' + bind);
+}
