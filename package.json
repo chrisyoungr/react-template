@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/chrisyoungr/react-template/issues"
   },
-  "homepage": "https://github.com/chrisyoungr/react-template#readme"
+  "homepage": "https://github.com/chrisyoungr/react-template#readme",
+  "dependencies": {}
 }

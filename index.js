@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-var debug = require('debug')('react-template:server');
 var http = require('http');
 var app = require('./app');
 
@@ -7,7 +6,7 @@ var app = require('./app');
  * Get port from environment and store in Express.
  */
 var port = normalizePort(process.env.PORT || '3013');
-
+console.log("Port is", port);
 /*
  * Normalize a port into a number, string, or false.
  */
