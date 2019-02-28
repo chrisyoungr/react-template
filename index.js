@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+var debug = require('debug')('reacttemplate:server');
 var http = require('http');
 var app = require('./app');
 
