@@ -71,3 +71,4 @@ console.log('after build');
 
 /***/ })
 /******/ ]);
+//# sourceMappingURL=bundle.js.map
