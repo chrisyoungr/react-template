@@ -10,6 +10,6 @@ module.exports = {
     plugins: [
         new CopyWebpackPlugin ([
             { from: 'src/html/index.html', to: 'index.html' },
-        ])
+        ]),
     ]
 }

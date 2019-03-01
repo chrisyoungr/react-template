@@ -1,1 +1,1 @@
-console.log('running src/index');
+console.log('after build');
