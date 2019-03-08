@@ -8,7 +8,7 @@ module.exports = {
         path: path.resolve(__dirname,'public'),
         filename: 'bundle.js',
     },
-    modules: {
+    module: {
         rules: [
             {
                 enforce: 'pre',
