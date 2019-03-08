@@ -13,12 +13,12 @@ module.exports = {
             {
                 enforce: 'pre',
                 test: /.(js|jsx)$/,
-                exclude: /node_modules/,
+                exclude: /node_module/,
                 loader: 'eslint-loader'
             },
             {
                 test: /.(js|jsx)$/,
-                exclude: /node_modules/,
+                exclude: /node_module/,
                 loader: 'babel-loader',
                 options: {
                     presets: ['@babel/preset-env', '@babel/preset-react'],
