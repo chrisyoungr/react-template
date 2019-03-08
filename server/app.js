@@ -15,7 +15,12 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+<<<<<<< HEAD
 app.use(express.static(__dirname + '../../public'));
+=======
+app.use(express.static(__dirname + '/../public'));
+
+>>>>>>> ca97247ac20ccc68de10f10d8a1a2bfdb817f351
 app.use('/', routes);
 
 if (app.get('env') === 'development') {
