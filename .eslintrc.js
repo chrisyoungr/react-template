@@ -50,6 +50,7 @@ module.exports = {
             "mocha/no-exclusive-tests": "error",
             "react/jsx-indent":"warn",
             "react/jsx-boolean-value":"warn",
-            "react/jsx-tag-spacing": ["error", { "beforeSelfClosing": "always" }]
+            "react/jsx-tag-spacing": ["error", { "beforeSelfClosing": "always" }],
+            "indent": ["warn", 4]
         }
     };
