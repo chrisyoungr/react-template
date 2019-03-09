@@ -49,6 +49,7 @@ module.exports = {
             'import/no-extraneous-dependencies':'warn',
             "mocha/no-exclusive-tests": "error",
             "react/jsx-indent":"warn",
-            "react/jsx-boolean-value":"warn"
+            "react/jsx-boolean-value":"warn",
+            "react/jsx-tag-spacing": ["error", { "beforeSelfClosing": "always" }]
         }
     };
