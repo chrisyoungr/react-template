@@ -3,7 +3,7 @@ import {Route} from 'react-router-dom';
 import Header from './components/layout/header'
 import Footer from './components/layout/footer'
 import Home from './components/home/home'
-import About from './components/about/about'
+import Admin from './components/admin/admin'
 import history from './components/history'
 
 export default class App extends React.Component {
@@ -22,8 +22,8 @@ export default class App extends React.Component {
                     }}
                 />
                 <Route
-                  exact path="/about" render={(props)=>{
-                      return <About {... props} />
+                  exact path="/admin" render={(props)=>{
+                      return <Admin {... props} />
                     }}
                 />
                 <Footer />

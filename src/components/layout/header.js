@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar,Nav,NavItem} from 'react-bootstrap';
+import {Navbar,Nav,NavItem,NavDropdown,Dropdown} from 'react-bootstrap';
 import history from '../history';
 
 export default class Header extends React.Component {
@@ -10,13 +10,14 @@ export default class Header extends React.Component {
                 <Navbar.Brand href="/">React-Bootstrap
                 <img src="/img/favicon.png" alt="logo" height="30" width="30" />
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto">
-                        <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/about">Link</Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
+                <NavDropdown id="basic-nav-dropdown" title={<span><i className="fa fa-user fa-fw" /></span>}>
+                    <NavDropdown.Item href="/"><i className="fa fa-user fa-fw" /> User Settings</NavDropdown.Item>
+                    <NavDropdown.Item href="/admin"><i className="fa fa-gear fa-fw" /> Admin</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="/"><i className="fa fa-sign-out fa-fw" /> Logout</NavDropdown.Item>
+                </NavDropdown>
+
+                
             </Navbar>
         </div>
         );
