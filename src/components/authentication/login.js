@@ -2,60 +2,33 @@ import React from 'react';
 import { Button, Form, FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 
 export default class Login extends React.Component {
-  constructor(props) {
-    super(props);
+    constructor(props) {
+        super(props);
+        this.state = {};
+    }
 
-    this.state = {
-      email: "",
-      password: ""
-    };
-  }
+    render() {
+        return (
+        <div className="Login">
+            <Form>
+                <Form.Group controlId="formBasicEmail">
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control type="email" placeholder="Enter email" />
+                    <Form.Text className="text-muted">We’ll never share your email with anyone else.</Form.Text>
+                </Form.Group>
 
-  validateForm() {
-    return this.state.email.length > 0 && this.state.password.length > 0;
-  }
-
-  handleChange = event => {
-    this.setState({
-      [event.target.id]: event.target.value
-    });
-  }
-
-  handleSubmit = event => {
-    event.preventDefault();
-  }
-
-  render() {
-    return (
-      <div className="Login">
-        <Form onSubmit={this.handleSubmit}>
-          <FormGroup controlId="email" bsSize="large">
-            <ControlLabel>Email</ControlLabel>
-            <FormControl
-              autoFocus
-              type="email"
-              value={this.state.email}
-              onChange={this.handleChange}
-            />
-          </FormGroup>
-          <FormGroup controlId="password" bsSize="large">
-            <ControlLabel>Password</ControlLabel>
-            <FormControl
-              value={this.state.password}
-              onChange={this.handleChange}
-              type="password"
-            />
-          </FormGroup>
-          <Button
-            block
-            bsSize="large"
-            disabled={!this.validateForm()}
-            type="submit"
-          >
-            Login
-          </Button>
-        </Form>
-      </div>
-    );
-  }
+                <Form.Group controlId="formBasicPassword">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control type="password" placeholder="Password" />
+                </Form.Group>
+                <Form.Group controlId="formBasicChecbox">
+                    <Form.Check type="checkbox" label="Check me out" />
+                </Form.Group>
+                <Button variant="primary" type="submit">
+                    Submit
+                </Button>
+                </Form>
+        </div>
+        );
+    }
 }
