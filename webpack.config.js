@@ -8,6 +8,16 @@ module.exports = {
         path: path.resolve(__dirname,'public'),
         filename: 'bundle.js',
     },
+    devServer: {
+        contentBase: path.join(__dirname,'public'),
+        compress: true,
+        historyApiFallback: true,
+        port: 9005,
+        proxy: [{
+            path: `/api/v1/*`,
+            target: `http://localhost:3013`,
+        }],
+    },
     module: {
         rules: [
             {

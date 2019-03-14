@@ -14,7 +14,7 @@ export default class AppointmentsDetail extends React.Component {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-lg-12">
-                            <h1 className="page-header">Appointment Detail:</h1>
+                            <h1 className="page-header rokkitt-style">Appointment Detail:</h1>
                             <div className="row show-grid">
                                 <div className="col-md-1"><Button variant="secondary">Edit</Button></div>
                                 <div className="col-md-1"><Button variant="light">Delete</Button></div>

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAQ,uFAA+E;AAEvF,cAAe;EACX,WAAW,EAAE,SAAS;;ACH1B,WAAY;EACR,gBAAgB,EAAC,IAAI",
+"sources": ["../../src/css/common.scss","../../src/components/appointments/appointments.scss"],
+"names": [],
+"file": "main.css"
+}
