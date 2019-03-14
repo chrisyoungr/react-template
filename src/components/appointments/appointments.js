@@ -1,11 +1,21 @@
 import React from 'react';
 import {Table} from 'react-bootstrap';
 import history from '../history';
+import cyService from '../../services/cyServices';
 
 export default class Appointments extends React.Component {
     constructor(props) {
         super(props);
         this.state = {};
+        this.message = cyService.getData();
+        const notePromise = cyService.getAsync();
+        notePromise.then((n) =>{
+            this.note = n;
+        })
+        .catch(error=>{
+            console.log("error is:",error);
+        });
+
     }
 
     render() {
@@ -15,7 +25,9 @@ export default class Appointments extends React.Component {
                     <div className="row">
                         <div className="col-lg-12">
                             <h1 className="page-header">Appointments</h1>
-                            <Table Responsive className="table table-sm table-striped dataTable table-responsive" id="tblAppointments">
+                            <div>{this.message}</div>
+                            <div>{this.note}</div>
+                            <Table className="table table-sm table-striped dataTable table-responsive" id="tblAppointments">
                                 <thead>
                                     <tr>
                                         <th>Client</th>
