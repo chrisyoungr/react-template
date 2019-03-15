@@ -51,6 +51,7 @@ module.exports = {
             "react/jsx-indent":"warn",
             "react/jsx-boolean-value":"warn",
             "react/jsx-tag-spacing": ["error", { "beforeSelfClosing": "always" }],
-            "indent": ["warn", 4]
+            "indent": ["warn", 4],
+            "react/jsx-indent": ["warn",4]
         }
     };

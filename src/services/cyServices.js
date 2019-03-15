@@ -12,4 +12,11 @@ cyService.getAsync = () => {
     });
 }
 
+cyService.getAppointmentDetail = () => {
+    return new Promise((resolve,reject)=>{
+        const appointmentDetail = [{row:1,name:"John",isa:"JK",type:"buyer"},{row:2,name:"Chris",isa:"cy",type:"buyer"}];
+        appointmentDetail ? resolve(appointmentDetail): reject("failed to get details");
+    });
+}
+
 export default cyService;

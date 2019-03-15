@@ -8,7 +8,7 @@
     "start": "node server/index",
     "dev": "webpack-dev-server",
     "sass": "sass src/css/main.scss public/css/main.css",
-    "all": "webpack --config ./webpack.config.js; npm run start;",
+    "all": "npm run build & npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

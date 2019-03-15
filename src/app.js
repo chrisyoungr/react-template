@@ -28,11 +28,11 @@ export default class App extends React.Component {
                 />
                 <Route
                   exact path="/appointments" render={(props)=>{
-                      return <Appointments {... props} />
+                      return <Appointments calendar="this is a calendar" {... props} />
                     }}
                 />
                 <Route
-                  exact path="/appointments-detail" render={(props)=>{
+                  exact path="/appointments-detail/:row" render={(props)=>{
                       return <AppointmentsDetail {... props} />
                     }}
                 />

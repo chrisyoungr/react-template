@@ -1,5 +1,5 @@
 import React from 'react';
-import {Table,Tab,Tabs,Sonnet,Row,TabContainer,TabContent} from 'react-bootstrap';
+import {Table,Tab,Tabs,Row} from 'react-bootstrap';
 import history from '../history';
 
 export default class MonthlyReport extends React.Component {

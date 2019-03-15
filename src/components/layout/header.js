@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar,Nav,NavItem,NavDropdown,Dropdown} from 'react-bootstrap';
+import {Navbar,Nav,NavDropdown} from 'react-bootstrap';
 import history from '../history';
 
 export default class Header extends React.Component {
